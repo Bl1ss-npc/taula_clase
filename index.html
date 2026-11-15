@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari d'inscripció a activitats extraescolars</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 class="titulo">Formulari d'inscripció
+        <span class="subtitulo">a activitats extraescolars</span>
+    </h1>
+
+    <form class="formulario" action="#" method="post">
+
+        <fieldset class="grupo">
+            <legend>Datos personales</legend>
+
+            <p class="fila">
+                <label for="nom">Nom *</label><br>
+                <input class="campo" type="text" id="nom" name="nom" placeholder="Escriu el teu nom" required>
+            </p>
+
+            <p class="fila">
+                <label for="cognoms">Cognoms *</label><br>
+                <input class="campo" type="text" id="cognoms" name="cognoms" placeholder="Escriu els teus cognoms" required>
+            </p>
+
+            <p class="fila">
+                <label for="email">Correu electrònic *</label><br>
+                <input class="campo" type="email" id="email" name="email" placeholder="nom@exemple.com" required>
+            </p>
+
+            <p class="fila">
+                <label for="telefon">Telèfon</label><br>
+                <input class="campo" type="tel" id="telefon" name="telefon" placeholder="600123123">
+            </p>
+
+            <p class="fila">
+                <label for="naixement">Data de naixement *</label><br>
+                <input class="campo" type="date" id="naixement" name="naixement" required>
+            </p>
+
+            <p class="fila">
+                <label for="contrasenya">Contrasenya *</label><br>
+                <input class="campo" type="password" id="contrasenya" name="contrasenya" required>
+            </p>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <legend>Informació acadèmica</legend>
+
+            <p class="fila">
+                <label for="curs">Curs actual *</label><br>
+                <select class="campo" id="curs" name="curs" required>
+                    <option value="">Selecciona un curs</option>
+                    <option value="1eso">1r ESO</option>
+                    <option value="2eso">2n ESO</option>
+                    <option value="3eso">3r ESO</option>
+                    <option value="4eso">4t ESO</option>
+                    <option value="1bat">1r Batxillerat</option>
+                    <option value="2bat">2n Batxillerat</option>
+                </select>
+            </p>
+
+            <p>Activitat extraescolar *</p>
+
+            <label>
+                <input class="opcion" type="radio" name="activitat" value="angles" required>
+                Anglès
+            </label><br>
+
+            <label>
+                <input class="opcion" type="radio" name="activitat" value="robotica">
+                Robòtica
+            </label><br>
+
+            <label>
+                <input class="opcion" type="radio" name="activitat" value="programacio">
+                Programació
+            </label><br>
+
+            <label>
+                <input class="opcion" type="radio" name="activitat" value="esports">
+                Esports
+            </label>
+
+            <p>Dies disponibles</p>
+
+            <label>
+                <input class="opcion" type="checkbox" name="dies" value="dilluns">
+                Dilluns
+            </label><br>
+
+            <label>
+                <input class="opcion" type="checkbox" name="dies" value="dimarts">
+                Dimarts
+            </label><br>
+
+            <label>
+                <input class="opcion" type="checkbox" name="dies" value="dimecres">
+                Dimecres
+            </label><br>
+
+            <label>
+                <input class="opcion" type="checkbox" name="dies" value="dijous">
+                Dijous
+            </label><br>
+
+            <label>
+                <input class="opcion" type="checkbox" name="dies" value="divendres">
+                Divendres
+            </label>
+        </fieldset>
+
+        <fieldset class="grupo">
+            <legend>Informació addicional</legend>
+
+            <p class="fila">
+                <label for="color">Color preferit</label><br>
+                <input class="campo" type="color" id="color" name="color">
+            </p>
+
+            <p class="fila">
+                <label for="nivell">Nivell (0 a 10)</label><br>
+                <input class="campo" type="range" id="nivell" name="nivell" min="0" max="10" value="5">
+            </p>
+
+            <p class="fila">
+                <label for="fitxer">Adjuntar fitxer</label><br>
+                <input class="campo" type="file" id="fitxer" name="fitxer">
+            </p>
+
+            <p class="fila">
+                <label for="observacions">Observacions</label><br>
+                <textarea class="campo" id="observacions" name="observacions" rows="5" cols="40" placeholder="Escriu aquí qualsevol observació"></textarea>
+            </p>
+        </fieldset>
+
+        <p class="condiciones">
+            <label>
+                <input class="opcion" type="checkbox" name="condicions" required>
+                Accepto les condicions d'inscripció *
+            </label>
+        </p>
+
+        <div class="botones">
+            <button class="enviar" type="submit">Enviar</button>
+            <button class="limpiar" type="reset">Netejar</button>
+        </div>
+
+    </form>
+
+</body>
+</html>
